@@ -530,7 +530,7 @@ jobs:
 
     # Upload artifacts
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: EqualizerAPO-${{ matrix.platform }}-${{ matrix.simd_variant }}
         path: |
@@ -674,7 +674,7 @@ jobs:
       run: makensis ${{ github.workspace }}\Setup\${{ matrix.setup_file }}.nsi
 
     - name: Upload installers
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: EqualizerAPO_Setup-${{ matrix.installer_name }}
         path: ${{ github.workspace }}\Setup\*.exe
