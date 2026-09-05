@@ -655,7 +655,7 @@ jobs:
         }
 
     - name: Install NSIS
-      uses: negrutiu/nsis-install@v2
+      uses: negrutiu/nsis-install@v3
 
     - name: Install `NsArray` from web
       uses: negrutiu/nsis-install-plugin@v1
