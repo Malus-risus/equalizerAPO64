@@ -76,7 +76,7 @@ jobs:
         msbuild-architecture: ${{ matrix.platform }}
 
     - name: Setup NuGet
-      uses: NuGet/setup-nuget@v2
+      uses: NuGet/setup-nuget@v4
 
     # Download FFTW from amd-fftw repository artifacts
     - name: Download FFTW artifacts
