@@ -80,7 +80,7 @@ jobs:
 
     # Download FFTW from amd-fftw repository artifacts
     - name: Download FFTW artifacts
-      uses: dawidd6/action-download-artifact@v3
+      uses: dawidd6/action-download-artifact@v28
       with:
         github_token: ${{ secrets.GH_PAT }}
         workflow: c-cpp.yml
@@ -94,7 +94,7 @@ jobs:
 
     # Download muParserX from repository artifacts
     - name: Download muParserX artifacts
-      uses: dawidd6/action-download-artifact@v3
+      uses: dawidd6/action-download-artifact@v28
       with:
         github_token: ${{ secrets.GH_PAT }}
         workflow: c-cpp.yml
@@ -108,7 +108,7 @@ jobs:
 
     # Download muParserX from repository artifacts
     - name: Download libsndfile artifacts
-      uses: dawidd6/action-download-artifact@v3
+      uses: dawidd6/action-download-artifact@v28
       with:
         github_token: ${{ secrets.GH_PAT }}
         workflow: action.yml
